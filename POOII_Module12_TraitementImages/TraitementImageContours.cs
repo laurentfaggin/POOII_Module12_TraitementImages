@@ -10,6 +10,10 @@ namespace POOII_Module12_TraitementImages
     [Description("contours")]
     public class TraitementImageContours: TraitementImageMasque
     {
+        public TraitementImageContours()
+        {
+            Transformation = TraiterDonnees;
+        }
         private static byte TraiterDonnees(byte[] p_donnees)
         {
             int coeficientCentrale = p_donnees.Length - 1;

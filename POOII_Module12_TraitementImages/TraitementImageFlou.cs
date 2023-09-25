@@ -10,6 +10,10 @@ namespace POOII_Module12_TraitementImages
     [Description("rendu flou")]
     public class TraitementImageFlou: TraitementImageMasque
     {
+        public TraitementImageFlou()
+        {
+            Transformation = TraiterDonnees;
+        }
         private static byte TraiterDonnees(byte[] p_donnees)
         {
             int somme = 0;

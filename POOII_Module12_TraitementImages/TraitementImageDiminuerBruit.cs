@@ -10,6 +10,10 @@ namespace POOII_Module12_TraitementImages
     [Description("diminution bruit")]
     public class TraitementImageDiminuerBruit: TraitementImageMasque
     {
+        public TraitementImageDiminuerBruit()
+        {
+            Transformation = TraiterDonnees;
+        }
         private static byte TraiterDonnees(byte[] p_donnees)
         {
             Array.Sort(p_donnees);
