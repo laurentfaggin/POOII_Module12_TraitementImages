@@ -30,5 +30,17 @@ namespace POOII_Module12_TraitementImages
                 pbImage.Image = image.Image;
             }            
         }
+
+        private void bAjouterTraitement_Click(object sender, EventArgs e)
+        {
+            lbListeTraitementAAppliquer.Items.Add(cbTraitementAAjouter.SelectedItem);
+        }
+
+        private void bSupprimerTraitement_Click(object sender, EventArgs e)
+        {
+            lbListeTraitementAAppliquer.Items.Remove(cbTraitementAAjouter.SelectedItem);
+        }
+
+
     }
 }

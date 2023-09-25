@@ -153,6 +153,7 @@
             this.bAjouterTraitement.TabIndex = 4;
             this.bAjouterTraitement.Text = "+";
             this.bAjouterTraitement.UseVisualStyleBackColor = false;
+            this.bAjouterTraitement.Click += new System.EventHandler(this.bAjouterTraitement_Click);
             // 
             // bSupprimerTraitement
             // 
@@ -165,6 +166,7 @@
             this.bSupprimerTraitement.TabIndex = 3;
             this.bSupprimerTraitement.Text = "-";
             this.bSupprimerTraitement.UseVisualStyleBackColor = false;
+            this.bSupprimerTraitement.Click += new System.EventHandler(this.bSupprimerTraitement_Click);
             // 
             // bSuiteTraitementsDeplacerHaut
             // 
@@ -185,7 +187,7 @@
             this.cbTraitementAAjouter.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.cbTraitementAAjouter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTraitementAAjouter.FormattingEnabled = true;
-            this.cbTraitementAAjouter.Location = new System.Drawing.Point(12, 12);
+            this.cbTraitementAAjouter.Location = new System.Drawing.Point(22, 3);
             this.cbTraitementAAjouter.Name = "cbTraitementAAjouter";
             this.cbTraitementAAjouter.Size = new System.Drawing.Size(299, 28);
             this.cbTraitementAAjouter.TabIndex = 0;
