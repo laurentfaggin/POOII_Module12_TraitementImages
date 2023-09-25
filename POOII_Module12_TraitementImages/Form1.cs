@@ -42,8 +42,7 @@ namespace POOII_Module12_TraitementImages
 
         private void bSupprimerTraitement_Click(object sender, EventArgs e)
         {
-            lbListeTraitementAAppliquer.Items.Remove(cbTraitementAAjouter.SelectedItem);
-
+            lbListeTraitementAAppliquer.Items.Remove(lbListeTraitementAAppliquer.SelectedItem);
         }
 
         private void bSuiteTraitementsDeplacerBas_Click(object sender, EventArgs e)
