@@ -43,11 +43,11 @@
             this.bAppliquer = new System.Windows.Forms.Button();
             this.lbListeTraitementAAppliquer = new System.Windows.Forms.ListBox();
             this.pgProprieteTraitementSelectionne = new System.Windows.Forms.PropertyGrid();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pbImage = new System.Windows.Forms.PictureBox();
             this.ssStatut = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scPrincipal)).BeginInit();
             this.scPrincipal.Panel1.SuspendLayout();
@@ -58,9 +58,9 @@
             this.scSuiteTraiements.Panel2.SuspendLayout();
             this.scSuiteTraiements.SuspendLayout();
             this.pControlSuiteTraitements.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.ssStatut.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -85,7 +85,7 @@
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
@@ -144,7 +144,7 @@
             // bAjouterTraitement
             // 
             this.bAjouterTraitement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bAjouterTraitement.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.bAjouterTraitement.BackColor = System.Drawing.SystemColors.Control;
             this.bAjouterTraitement.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bAjouterTraitement.Location = new System.Drawing.Point(213, 53);
             this.bAjouterTraitement.Margin = new System.Windows.Forms.Padding(0);
@@ -157,7 +157,7 @@
             // bSupprimerTraitement
             // 
             this.bSupprimerTraitement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bSupprimerTraitement.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.bSupprimerTraitement.BackColor = System.Drawing.SystemColors.Control;
             this.bSupprimerTraitement.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bSupprimerTraitement.Location = new System.Drawing.Point(270, 53);
             this.bSupprimerTraitement.Name = "bSupprimerTraitement";
@@ -168,7 +168,7 @@
             // 
             // bSuiteTraitementsDeplacerHaut
             // 
-            this.bSuiteTraitementsDeplacerHaut.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.bSuiteTraitementsDeplacerHaut.BackColor = System.Drawing.SystemColors.Control;
             this.bSuiteTraitementsDeplacerHaut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bSuiteTraitementsDeplacerHaut.Location = new System.Drawing.Point(12, 53);
             this.bSuiteTraitementsDeplacerHaut.Margin = new System.Windows.Forms.Padding(0);
@@ -192,7 +192,7 @@
             // 
             // bSuiteTraitementsDeplacerBas
             // 
-            this.bSuiteTraitementsDeplacerBas.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.bSuiteTraitementsDeplacerBas.BackColor = System.Drawing.SystemColors.Control;
             this.bSuiteTraitementsDeplacerBas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bSuiteTraitementsDeplacerBas.Location = new System.Drawing.Point(65, 53);
             this.bSuiteTraitementsDeplacerBas.Margin = new System.Windows.Forms.Padding(0);
@@ -217,11 +217,14 @@
             // 
             // lbListeTraitementAAppliquer
             // 
+            this.lbListeTraitementAAppliquer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbListeTraitementAAppliquer.FormattingEnabled = true;
             this.lbListeTraitementAAppliquer.ItemHeight = 20;
             this.lbListeTraitementAAppliquer.Location = new System.Drawing.Point(0, 113);
             this.lbListeTraitementAAppliquer.Name = "lbListeTraitementAAppliquer";
-            this.lbListeTraitementAAppliquer.Size = new System.Drawing.Size(304, 64);
+            this.lbListeTraitementAAppliquer.Size = new System.Drawing.Size(324, 144);
             this.lbListeTraitementAAppliquer.TabIndex = 5;
             // 
             // pgProprieteTraitementSelectionne
@@ -231,30 +234,6 @@
             this.pgProprieteTraitementSelectionne.Name = "pgProprieteTraitementSelectionne";
             this.pgProprieteTraitementSelectionne.Size = new System.Drawing.Size(324, 368);
             this.pgProprieteTraitementSelectionne.TabIndex = 0;
-            // 
-            // pbImage
-            // 
-            this.pbImage.Location = new System.Drawing.Point(0, 0);
-            this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(196, 94);
-            this.pbImage.TabIndex = 0;
-            this.pbImage.TabStop = false;
-            // 
-            // ssStatut
-            // 
-            this.ssStatut.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.ssStatut.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar1});
-            this.ssStatut.Location = new System.Drawing.Point(0, 651);
-            this.ssStatut.Name = "ssStatut";
-            this.ssStatut.Size = new System.Drawing.Size(649, 24);
-            this.ssStatut.TabIndex = 0;
-            this.ssStatut.Text = "statusStrip1";
-            // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
             // toolStrip1
             // 
@@ -275,6 +254,31 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // pbImage
+            // 
+            this.pbImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbImage.Location = new System.Drawing.Point(0, 0);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(649, 651);
+            this.pbImage.TabIndex = 0;
+            this.pbImage.TabStop = false;
+            // 
+            // ssStatut
+            // 
+            this.ssStatut.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.ssStatut.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripProgressBar1});
+            this.ssStatut.Location = new System.Drawing.Point(0, 651);
+            this.ssStatut.Name = "ssStatut";
+            this.ssStatut.Size = new System.Drawing.Size(649, 24);
+            this.ssStatut.TabIndex = 0;
+            this.ssStatut.Text = "statusStrip1";
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
             // 
             // fTraitementImages
             // 
@@ -299,11 +303,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.scSuiteTraiements)).EndInit();
             this.scSuiteTraiements.ResumeLayout(false);
             this.pControlSuiteTraitements.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ssStatut.ResumeLayout(false);
             this.ssStatut.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

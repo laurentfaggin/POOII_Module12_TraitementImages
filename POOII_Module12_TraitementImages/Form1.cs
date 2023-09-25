@@ -19,16 +19,16 @@ namespace POOII_Module12_TraitementImages
         private void ouvrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string cheminFichier = string.Empty;
-            using (OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "files (*.jpeg)|*.jpeg|";
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    cheminFichier = ofd.FileName;
-                    ImageManipulable image = new ImageManipulable(cheminFichier);
-                    pbImage.Image = image.Image;
-                }
-            }
+            OpenFileDialog ofd = new OpenFileDialog();        
+            ofd.Filter = "Fichier JPEG (*.jpeg)|*.jpeg|JPG (*.jpg)|*.jpg";
+            DialogResult dr = ofd.ShowDialog();
+            if (dr == DialogResult.OK)
+            { 
+                cheminFichier = ofd.FileName;
+                pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                ImageManipulable image = new ImageManipulable(cheminFichier);
+                pbImage.Image = image.Image;
+            }            
         }
     }
 }
