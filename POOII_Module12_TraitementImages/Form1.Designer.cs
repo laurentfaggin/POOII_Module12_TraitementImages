@@ -237,6 +237,7 @@
             this.lbListeTraitementAAppliquer.Name = "lbListeTraitementAAppliquer";
             this.lbListeTraitementAAppliquer.Size = new System.Drawing.Size(243, 79);
             this.lbListeTraitementAAppliquer.TabIndex = 5;
+            this.lbListeTraitementAAppliquer.SelectedIndexChanged += new System.EventHandler(this.lbListeTraitementAAppliquer_SelectedIndexChanged);
             // 
             // pgProprieteTraitementSelectionne
             // 

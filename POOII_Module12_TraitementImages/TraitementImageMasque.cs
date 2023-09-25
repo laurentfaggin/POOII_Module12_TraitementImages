@@ -10,21 +10,33 @@ namespace POOII_Module12_TraitementImages
     public abstract class TraitementImageMasque : ITraitementImage
     {
         private int m_largeur;
+        [Browsable(false)]
         public ITraitementImage Suivant { get; set; }
         public Func<byte[], byte> Transformation { get; set; }
         public int Largeur
         {
             get { return m_largeur; }
             set 
-            { 
-                if (this.m_largeur % 2 == 0) { 
-                    throw new ArgumentException ("la largeur doit etre impaire", nameof(this.Largeur));
-                } 
-                if ((this.m_largeur & 1) == 1)
+            {   
+                if ((m_largeur & 1) == 1)
                 {
-                    throw new ArgumentException ("la largeur ne peut etre inferieure a 1", nameof(this.Largeur));
+                    m_largeur = value;
                 }
-                m_largeur = value;
+                if ((m_largeur & 1) == 0)
+                {
+                    if (value > 0)
+                    {
+                        m_largeur = value - 1;
+                    }
+                    else
+                    {
+                        m_largeur = value + 1;
+                    }
+                }
+                // meme methode mais en une seule ligne. 
+                // le ? vaut un if. si la condition est oui alors on applique l'element a gauche du ':'
+                // si faux alors on appliquee l'element a droite du ':'
+                //m_largeur = value % 2==0 ? value+1 : value;
             }
         }
 

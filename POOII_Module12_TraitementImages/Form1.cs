@@ -33,12 +33,13 @@ namespace POOII_Module12_TraitementImages
 
         private void bAjouterTraitement_Click(object sender, EventArgs e)
         {
-            lbListeTraitementAAppliquer.Items.Add(cbTraitementAAjouter.SelectedItem);
+            lbListeTraitementAAppliquer.Items.Add(((CreateurTraitement)cbTraitementAAjouter.SelectedItem).Creer());
         }
 
         private void bSupprimerTraitement_Click(object sender, EventArgs e)
         {
             lbListeTraitementAAppliquer.Items.Remove(cbTraitementAAjouter.SelectedItem);
+
         }
 
         private void bSuiteTraitementsDeplacerBas_Click(object sender, EventArgs e)
@@ -63,6 +64,11 @@ namespace POOII_Module12_TraitementImages
             {
                 lbListeTraitementAAppliquer.SelectedIndex = lbListeTraitementAAppliquer.Items.Count-1;
             }
+        }
+
+        private void lbListeTraitementAAppliquer_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pgProprieteTraitementSelectionne.SelectedObject = lbListeTraitementAAppliquer.SelectedItem;
         }
     }
 }

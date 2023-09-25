@@ -10,6 +10,7 @@ namespace POOII_Module12_TraitementImages
     [Description("noir et blanc")]
     public class TraitementImageConvertirNoirEtBlanc : ITraitementImage
     {
+        [Browsable(false)]
         public ITraitementImage Suivant { get; set; }
 
         public object Clone()

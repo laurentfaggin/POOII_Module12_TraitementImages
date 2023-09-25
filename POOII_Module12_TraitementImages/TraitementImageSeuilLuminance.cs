@@ -11,6 +11,7 @@ namespace POOII_Module12_TraitementImages
     public class TraitementImageSeuilLuminance : ITraitementImage
     {
         public int Seuil { get; set; }
+        [Browsable(false)]
         public ITraitementImage Suivant { get; set; }
 
         public object Clone()
