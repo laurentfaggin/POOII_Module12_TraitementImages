@@ -1,3 +1,5 @@
+using System.DirectoryServices.ActiveDirectory;
+
 namespace POOII_Module12_TraitementImages
 {
     public partial class fTraitementImages : Form
@@ -69,6 +71,19 @@ namespace POOII_Module12_TraitementImages
         private void lbListeTraitementAAppliquer_SelectedIndexChanged(object sender, EventArgs e)
         {
             pgProprieteTraitementSelectionne.SelectedObject = lbListeTraitementAAppliquer.SelectedItem;
+        }
+
+        private void bAppliquer_Click(object sender, EventArgs e)
+        {
+            List <ITraitementImage> traitement = new List <ITraitementImage>();
+            foreach (var t in lbListeTraitementAAppliquer.Items)
+            {
+                traitement.Add((ITraitementImage)((ITraitementImage)t).Clone());
+            }
+            for (int i = 0; i < traitement.Count; i++)
+            {
+                traitement[i].Suivant = traitement[i+1];
+            }
         }
     }
 }

@@ -224,6 +224,7 @@
             this.bAppliquer.TabIndex = 6;
             this.bAppliquer.Text = "Appliquer";
             this.bAppliquer.UseVisualStyleBackColor = false;
+            this.bAppliquer.Click += new System.EventHandler(this.bAppliquer_Click);
             // 
             // lbListeTraitementAAppliquer
             // 
