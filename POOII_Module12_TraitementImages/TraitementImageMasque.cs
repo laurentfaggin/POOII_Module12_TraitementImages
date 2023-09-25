@@ -9,7 +9,7 @@ namespace POOII_Module12_TraitementImages
 {
     public abstract class TraitementImageMasque : ITraitementImage
     {
-        private int m_largeur;
+        private int m_largeur = 3;
         [Browsable(false)]
         public ITraitementImage Suivant { get; set; }
         public Func<byte[], byte> Transformation { get; set; }
@@ -26,7 +26,7 @@ namespace POOII_Module12_TraitementImages
                 {
                     if (value > 0)
                     {
-                        m_largeur = value - 1;
+                        m_largeur = value + 1;
                     }
                     else
                     {

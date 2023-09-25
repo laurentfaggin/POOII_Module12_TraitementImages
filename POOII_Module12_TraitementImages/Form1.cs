@@ -4,6 +4,7 @@ namespace POOII_Module12_TraitementImages
 {
     public partial class fTraitementImages : Form
     {
+        private ImageManipulable m_image;
         public fTraitementImages()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace POOII_Module12_TraitementImages
                 pbImage.SizeMode = PictureBoxSizeMode.StretchImage;
                 ImageManipulable image = new ImageManipulable(cheminFichier);
                 pbImage.Image = image.Image;
+                m_image= image;
             }            
         }
 
@@ -80,10 +82,12 @@ namespace POOII_Module12_TraitementImages
             {
                 traitement.Add((ITraitementImage)((ITraitementImage)t).Clone());
             }
-            for (int i = 0; i < traitement.Count; i++)
+            for (int i = 0; i < traitement.Count-1; i++)
             {
                 traitement[i].Suivant = traitement[i+1];
             }
+            traitement[0].TraiterImage(m_image);
+            pbImage.Image = m_image.Image;
         }
     }
 }
