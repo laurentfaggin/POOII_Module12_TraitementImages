@@ -41,6 +41,28 @@ namespace POOII_Module12_TraitementImages
             lbListeTraitementAAppliquer.Items.Remove(cbTraitementAAjouter.SelectedItem);
         }
 
+        private void bSuiteTraitementsDeplacerBas_Click(object sender, EventArgs e)
+        {
+            if (lbListeTraitementAAppliquer.SelectedIndex < lbListeTraitementAAppliquer.Items.Count-1)
+            {
+                lbListeTraitementAAppliquer.SelectedIndex++;
+            }
+            else
+            {
+                lbListeTraitementAAppliquer.SelectedIndex = 0;
+            }
+        }
 
+        private void bSuiteTraitementsDeplacerHaut_Click(object sender, EventArgs e)
+        {
+            if (lbListeTraitementAAppliquer.SelectedIndex > 0)
+            {
+                lbListeTraitementAAppliquer.SelectedIndex--;
+            }
+            else
+            {
+                lbListeTraitementAAppliquer.SelectedIndex = lbListeTraitementAAppliquer.Items.Count-1;
+            }
+        }
     }
 }

@@ -70,7 +70,8 @@
             this.msPrincipal});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(977, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(735, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,20 +80,21 @@
             this.msPrincipal.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ouvrirToolStripMenuItem});
             this.msPrincipal.Name = "msPrincipal";
-            this.msPrincipal.Size = new System.Drawing.Size(66, 24);
+            this.msPrincipal.Size = new System.Drawing.Size(54, 20);
             this.msPrincipal.Text = "Fichier";
             // 
             // ouvrirToolStripMenuItem
             // 
             this.ouvrirToolStripMenuItem.Name = "ouvrirToolStripMenuItem";
-            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
+            this.ouvrirToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.ouvrirToolStripMenuItem.Text = "Ouvrir";
             this.ouvrirToolStripMenuItem.Click += new System.EventHandler(this.ouvrirToolStripMenuItem_Click);
             // 
             // scPrincipal
             // 
             this.scPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scPrincipal.Location = new System.Drawing.Point(0, 28);
+            this.scPrincipal.Location = new System.Drawing.Point(0, 24);
+            this.scPrincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.scPrincipal.Name = "scPrincipal";
             // 
             // scPrincipal.Panel1
@@ -104,14 +106,15 @@
             this.scPrincipal.Panel2.Controls.Add(this.toolStrip1);
             this.scPrincipal.Panel2.Controls.Add(this.pbImage);
             this.scPrincipal.Panel2.Controls.Add(this.ssStatut);
-            this.scPrincipal.Size = new System.Drawing.Size(977, 675);
-            this.scPrincipal.SplitterDistance = 324;
+            this.scPrincipal.Size = new System.Drawing.Size(735, 441);
+            this.scPrincipal.SplitterDistance = 243;
             this.scPrincipal.TabIndex = 1;
             // 
             // scSuiteTraiements
             // 
             this.scSuiteTraiements.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scSuiteTraiements.Location = new System.Drawing.Point(0, 0);
+            this.scSuiteTraiements.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.scSuiteTraiements.Name = "scSuiteTraiements";
             this.scSuiteTraiements.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -124,8 +127,9 @@
             // scSuiteTraiements.Panel2
             // 
             this.scSuiteTraiements.Panel2.Controls.Add(this.pgProprieteTraitementSelectionne);
-            this.scSuiteTraiements.Size = new System.Drawing.Size(324, 675);
-            this.scSuiteTraiements.SplitterDistance = 303;
+            this.scSuiteTraiements.Size = new System.Drawing.Size(243, 441);
+            this.scSuiteTraiements.SplitterDistance = 197;
+            this.scSuiteTraiements.SplitterWidth = 3;
             this.scSuiteTraiements.TabIndex = 0;
             // 
             // pControlSuiteTraitements
@@ -137,8 +141,9 @@
             this.pControlSuiteTraitements.Controls.Add(this.bSuiteTraitementsDeplacerBas);
             this.pControlSuiteTraitements.Dock = System.Windows.Forms.DockStyle.Top;
             this.pControlSuiteTraitements.Location = new System.Drawing.Point(0, 0);
+            this.pControlSuiteTraitements.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pControlSuiteTraitements.Name = "pControlSuiteTraitements";
-            this.pControlSuiteTraitements.Size = new System.Drawing.Size(324, 113);
+            this.pControlSuiteTraitements.Size = new System.Drawing.Size(243, 85);
             this.pControlSuiteTraitements.TabIndex = 7;
             // 
             // bAjouterTraitement
@@ -146,10 +151,10 @@
             this.bAjouterTraitement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bAjouterTraitement.BackColor = System.Drawing.SystemColors.Control;
             this.bAjouterTraitement.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bAjouterTraitement.Location = new System.Drawing.Point(213, 53);
+            this.bAjouterTraitement.Location = new System.Drawing.Point(145, 40);
             this.bAjouterTraitement.Margin = new System.Windows.Forms.Padding(0);
             this.bAjouterTraitement.Name = "bAjouterTraitement";
-            this.bAjouterTraitement.Size = new System.Drawing.Size(40, 40);
+            this.bAjouterTraitement.Size = new System.Drawing.Size(35, 30);
             this.bAjouterTraitement.TabIndex = 4;
             this.bAjouterTraitement.Text = "+";
             this.bAjouterTraitement.UseVisualStyleBackColor = false;
@@ -160,9 +165,10 @@
             this.bSupprimerTraitement.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bSupprimerTraitement.BackColor = System.Drawing.SystemColors.Control;
             this.bSupprimerTraitement.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bSupprimerTraitement.Location = new System.Drawing.Point(270, 53);
+            this.bSupprimerTraitement.Location = new System.Drawing.Point(195, 40);
+            this.bSupprimerTraitement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bSupprimerTraitement.Name = "bSupprimerTraitement";
-            this.bSupprimerTraitement.Size = new System.Drawing.Size(40, 40);
+            this.bSupprimerTraitement.Size = new System.Drawing.Size(35, 30);
             this.bSupprimerTraitement.TabIndex = 3;
             this.bSupprimerTraitement.Text = "-";
             this.bSupprimerTraitement.UseVisualStyleBackColor = false;
@@ -172,47 +178,49 @@
             // 
             this.bSuiteTraitementsDeplacerHaut.BackColor = System.Drawing.SystemColors.Control;
             this.bSuiteTraitementsDeplacerHaut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bSuiteTraitementsDeplacerHaut.Location = new System.Drawing.Point(12, 53);
+            this.bSuiteTraitementsDeplacerHaut.Location = new System.Drawing.Point(10, 40);
             this.bSuiteTraitementsDeplacerHaut.Margin = new System.Windows.Forms.Padding(0);
             this.bSuiteTraitementsDeplacerHaut.Name = "bSuiteTraitementsDeplacerHaut";
-            this.bSuiteTraitementsDeplacerHaut.Size = new System.Drawing.Size(40, 40);
+            this.bSuiteTraitementsDeplacerHaut.Size = new System.Drawing.Size(35, 30);
             this.bSuiteTraitementsDeplacerHaut.TabIndex = 1;
             this.bSuiteTraitementsDeplacerHaut.Text = "^";
             this.bSuiteTraitementsDeplacerHaut.UseVisualStyleBackColor = false;
+            this.bSuiteTraitementsDeplacerHaut.Click += new System.EventHandler(this.bSuiteTraitementsDeplacerHaut_Click);
             // 
             // cbTraitementAAjouter
             // 
-            this.cbTraitementAAjouter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTraitementAAjouter.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.cbTraitementAAjouter.Dock = System.Windows.Forms.DockStyle.Top;
             this.cbTraitementAAjouter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTraitementAAjouter.FormattingEnabled = true;
-            this.cbTraitementAAjouter.Location = new System.Drawing.Point(22, 3);
+            this.cbTraitementAAjouter.Location = new System.Drawing.Point(0, 0);
+            this.cbTraitementAAjouter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbTraitementAAjouter.Name = "cbTraitementAAjouter";
-            this.cbTraitementAAjouter.Size = new System.Drawing.Size(299, 28);
+            this.cbTraitementAAjouter.Size = new System.Drawing.Size(243, 23);
             this.cbTraitementAAjouter.TabIndex = 0;
             // 
             // bSuiteTraitementsDeplacerBas
             // 
             this.bSuiteTraitementsDeplacerBas.BackColor = System.Drawing.SystemColors.Control;
             this.bSuiteTraitementsDeplacerBas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bSuiteTraitementsDeplacerBas.Location = new System.Drawing.Point(65, 53);
+            this.bSuiteTraitementsDeplacerBas.Location = new System.Drawing.Point(57, 40);
             this.bSuiteTraitementsDeplacerBas.Margin = new System.Windows.Forms.Padding(0);
             this.bSuiteTraitementsDeplacerBas.Name = "bSuiteTraitementsDeplacerBas";
-            this.bSuiteTraitementsDeplacerBas.Size = new System.Drawing.Size(40, 40);
+            this.bSuiteTraitementsDeplacerBas.Size = new System.Drawing.Size(35, 30);
             this.bSuiteTraitementsDeplacerBas.TabIndex = 2;
             this.bSuiteTraitementsDeplacerBas.Text = "v";
             this.bSuiteTraitementsDeplacerBas.UseVisualStyleBackColor = false;
+            this.bSuiteTraitementsDeplacerBas.Click += new System.EventHandler(this.bSuiteTraitementsDeplacerBas_Click);
             // 
             // bAppliquer
             // 
             this.bAppliquer.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.bAppliquer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bAppliquer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bAppliquer.Location = new System.Drawing.Point(0, 251);
+            this.bAppliquer.Location = new System.Drawing.Point(0, 158);
             this.bAppliquer.Margin = new System.Windows.Forms.Padding(0);
             this.bAppliquer.Name = "bAppliquer";
-            this.bAppliquer.Size = new System.Drawing.Size(324, 52);
+            this.bAppliquer.Size = new System.Drawing.Size(243, 39);
             this.bAppliquer.TabIndex = 6;
             this.bAppliquer.Text = "Appliquer";
             this.bAppliquer.UseVisualStyleBackColor = false;
@@ -223,18 +231,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbListeTraitementAAppliquer.FormattingEnabled = true;
-            this.lbListeTraitementAAppliquer.ItemHeight = 20;
-            this.lbListeTraitementAAppliquer.Location = new System.Drawing.Point(0, 113);
+            this.lbListeTraitementAAppliquer.ItemHeight = 15;
+            this.lbListeTraitementAAppliquer.Location = new System.Drawing.Point(0, 85);
+            this.lbListeTraitementAAppliquer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbListeTraitementAAppliquer.Name = "lbListeTraitementAAppliquer";
-            this.lbListeTraitementAAppliquer.Size = new System.Drawing.Size(324, 144);
+            this.lbListeTraitementAAppliquer.Size = new System.Drawing.Size(243, 79);
             this.lbListeTraitementAAppliquer.TabIndex = 5;
             // 
             // pgProprieteTraitementSelectionne
             // 
             this.pgProprieteTraitementSelectionne.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pgProprieteTraitementSelectionne.Location = new System.Drawing.Point(0, 0);
+            this.pgProprieteTraitementSelectionne.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pgProprieteTraitementSelectionne.Name = "pgProprieteTraitementSelectionne";
-            this.pgProprieteTraitementSelectionne.Size = new System.Drawing.Size(324, 368);
+            this.pgProprieteTraitementSelectionne.Size = new System.Drawing.Size(243, 241);
             this.pgProprieteTraitementSelectionne.TabIndex = 0;
             // 
             // toolStrip1
@@ -244,7 +254,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(649, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(488, 27);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -254,15 +264,16 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // pbImage
             // 
             this.pbImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbImage.Location = new System.Drawing.Point(0, 0);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbImage.Name = "pbImage";
-            this.pbImage.Size = new System.Drawing.Size(649, 651);
+            this.pbImage.Size = new System.Drawing.Size(488, 419);
             this.pbImage.TabIndex = 0;
             this.pbImage.TabStop = false;
             // 
@@ -271,25 +282,27 @@
             this.ssStatut.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ssStatut.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripProgressBar1});
-            this.ssStatut.Location = new System.Drawing.Point(0, 651);
+            this.ssStatut.Location = new System.Drawing.Point(0, 419);
             this.ssStatut.Name = "ssStatut";
-            this.ssStatut.Size = new System.Drawing.Size(649, 24);
+            this.ssStatut.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
+            this.ssStatut.Size = new System.Drawing.Size(488, 22);
             this.ssStatut.TabIndex = 0;
             this.ssStatut.Text = "statusStrip1";
             // 
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(88, 16);
             // 
             // fTraitementImages
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 703);
+            this.ClientSize = new System.Drawing.Size(735, 465);
             this.Controls.Add(this.scPrincipal);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "fTraitementImages";
             this.Text = "Traitement d\'images";
             this.Load += new System.EventHandler(this.fTraitementImages_Load);
